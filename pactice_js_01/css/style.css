@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: bold;
+}
+
+.pc_nav .main_menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu_button {
+  display: none;
+}
+
+.sp_nav {
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  .pc_nav {
+    display: none;
+  }
+  
+  .sp_nav {
+    display: block;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background-color: rgba(102, 60, 60, 0.5);
+    padding: 20px;
+  }
+
+}
