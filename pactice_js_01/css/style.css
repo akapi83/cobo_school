@@ -25,6 +25,10 @@ header {
   .pc_nav {
     display: none;
   }
+
+  .menu_button {
+    display: block;
+  }
   
   .sp_nav {
     display: block;
@@ -33,6 +37,13 @@ header {
     right: 0;
     background-color: rgba(102, 60, 60, 0.5);
     padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .sp_nav.open {
+    opacity: 1;
+    visibility: visible;
   }
 
 }
